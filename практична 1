@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    double t1, t2, t3;
+    printf("Enter three natural numbers t1, t2, t3: ");
+    scanf("%lf %lf %lf", &t1, &t2, &t3);
+
+    // Calculate the total eating rate
+    double total_rate = (1/t1) + (1/t2) + (1/t3);
+
+    // Calculate the time needed to eat the pie
+    double time_needed = 1 / total_rate;
+
+    // Print the result, rounded to 2 decimal places
+    printf("%.2f\n", time_needed);
+
+    return 0;
+}
